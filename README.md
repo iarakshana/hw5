@@ -11,8 +11,8 @@ It is due October 26 at 1:30am.
 In this homework, you'll use the same chicago crime file that you downloaded for the first homework.
 (Download it again if need be.)
 
-1. Which primary type of crime resulted in the most arrests?
-2. Which primary type most reliably (fractionally) resulted in an arrest?
+1. Which primary type of crime resulted in the most arrests?  Use `df.groupby(..).count(..)`.
+2. Which primary type most reliably (fractionally) resulted in an arrest? Use `df.groupby(..).mean()`.
 3. Which ward saw the most crime of any type?
 4. Regress number of weapons violations per ward against number of homicides per ward.  What is the slope?  What is its error?
 5. Use the school data from class, compare public schools with charters (they have a "C" in their ID).
