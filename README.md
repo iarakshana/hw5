@@ -11,13 +11,14 @@ It is due October 26 at 1:30am.
 In this homework, you'll use the same chicago crime file that you downloaded for the first homework.
 (Download it again if need be.)
 
-1. Which three primary type of crimes resulted in the most arrests?
-2. Which crime most reliably (fractionally) resulted in an arrest?
+1. Which primary type of crime resulted in the most arrests?
+2. Which primary type most reliably (fractionally) resulted in an arrest?
 3. Which ward saw the most crime of any type?
 4. Regress number of weapons violations per ward against number of homicides per ward.  What is the slope?  What is its error?
-5. Use the school data from class, compare public schools with charters (they have a "C" in their ID).  
+5. Use the school data from class, compare public schools with charters (they have a "C" in their ID).
+   Drop the schools that are missing data at the end.
    How do the charters do?  Compare the medians for the PARCC proficiency (%) and college ready (%).
-   Do they serve equal numbers of low income students
+   Do they serve comparable fractions of low income students to the public schools?
 6. Merge the school data with one other Census parameter of your choice, using the function from class.  
    Plot them, save the figure as q6.pdf, and make any observations.  You can save plots with 
    ```
