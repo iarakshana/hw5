@@ -42,5 +42,7 @@ You should start by figuring out 'the' efficient algorithm for calculating a lis
 There are then two methods: either you do floor division, mods and multiplication, 
   or you could swap parts of strings.
 
+This should be _very_ fast.  (Second hint: when making your list of candidate circular primes, with the sieve, what property of circular primes can you exploit to dramatically reduce the size of that list.)
+
 The assignment is due October 26 at 1:30am.
 
