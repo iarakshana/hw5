@@ -14,10 +14,11 @@ In this homework, you'll use the same chicago crime file that you downloaded for
 1. Which primary type of crime resulted in the most arrests?  Use `df.groupby(..).count(..)`.
 2. Which primary type most reliably (fractionally) resulted in an arrest? Use `df.groupby(..).mean()`.
 3. Which ward saw the most crime of any type?
-4. Regress number of weapons violations per ward against number of homicides per ward.  What is the slope?  What is its error?
+4. Regress number of weapons violations per ward against number of homicides per ward.  What is the slope?  What is its error?  Use [scipy.stats.linregress](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.linregress.html).
 5. Use the school data from class, compare public schools with charters (they have a "C" in their ID).
-   Drop the schools that are missing data at the end.
-   How do the charters do?  Compare the medians for the PARCC proficiency (%) and college ready (%).
+   Drop the schools that are missing data at the end (`df.dropna(inplace = True)`).
+   How do the charters do?  Compare the medians (the 50% points) for the PARCC proficiency (%) and college ready (%).
+   (You can call median() on a set.)
    Do they serve comparable fractions of low income students to the public schools?
 6. Merge the school data with one other Census parameter of your choice, using the function from class.  
    Plot them, save the figure as q6.pdf, and make any observations.  You can save plots with 
@@ -28,7 +29,8 @@ In this homework, you'll use the same chicago crime file that you downloaded for
 
 7. Plot and save (`q7.pdf`) the Chicago region unemployment rate from the BLS file provided.
 
-Please fill in solutions as you go.  Each o
+Please fill in solutions as you go.  Each question should go in one of the provided files.
+I would suggest doing your exploration in pandas, first, and then copying the small code over.
 
 ## Python
 
