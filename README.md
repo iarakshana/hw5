@@ -34,7 +34,7 @@ Please fill in solutions as you go.  Each o
 
 Please also complete the single (!) python-focussed problem:
 
-Circular primes have the property that all rotations of their digits are also prime numbers.  For instance, 19937, 37199, 71993, 93719, 99371, are all circular primes.  Below 100, there are thirteen such primes below 100: 2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, and 97.  How many circular primes are there below one million?
+Circular primes have the property that all rotations of their digits are also prime numbers.  For instance, 19937, 37199, 71993, 93719, 99371, are all circular primes.  Below 100, there are thirteen such primes: 2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, and 97.  How many circular primes are there below one million?
 
 You should start by figuring out 'the' efficient algorithm for calculating a list of primes.
 (Hint from lectures: Eratosthenes.)
