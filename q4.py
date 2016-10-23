@@ -1,5 +1,6 @@
 #!/usr/bin/env python 
 
-# solution should hold the final answer
-solution = 0
+# slope and error should hold the final answer
+slope = 0
+error = 0
 
