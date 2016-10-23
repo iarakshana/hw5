@@ -1,5 +1,7 @@
 #!/usr/bin/env python 
 
-# solution should hold the final answer
-solution = 0
+# You can simply write your final solution as a comment.
 
+
+# i.e., what is the performance of the charters?
+#       do they serve comparable fractions of disadvantaged students?
