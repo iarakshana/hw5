@@ -15,6 +15,7 @@ In this homework, you'll use the same chicago crime file that you downloaded for
 2. Which primary type most reliably (fractionally) resulted in an arrest? Use `df.groupby(..).mean()`.
 3. Which ward saw the most crime of any type?
 4. Regress number of weapons violations per ward against number of homicides per ward.  What is the slope?  What is its error?  Use [scipy.stats.linregress](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.linregress.html).
+   * N.B., you may find that not all wards have crimes or homicides, when you count by ward.  If so, you may need to use `fillna(0, inplace = True)` to specify that there weren't.  Make sure you have 50 wards!
 5. Use the school data from class, compare public schools with charters (they have a "C" in their ID).
    Drop the schools that are missing data at the end (`df.dropna(inplace = True)`).
    How do the charters do?  Compare the medians (the 50% points) for the PARCC proficiency (%) and college ready (%).
