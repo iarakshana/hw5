@@ -28,7 +28,7 @@ In this homework, you'll use the same chicago crime file that you downloaded for
    ax = df.plot()
    ax.get_figure().savefig('q6.pdf')
    ```
-   **YOU CAN DROP Q6 -- MISSING FILE AND TOO OPEN-ENDED.**
+   I've filled in the format for this question; hope it helps.  Treat it as extra credit.
 
 7. Plot and save (`q7.pdf`) the Chicago region unemployment rate from the BLS file provided.
 
