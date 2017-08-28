@@ -40,8 +40,6 @@ df_sch_geocode = pd.read_csv("school_address_geocoded.csv", index_col = "ISBE_ID
 df_sch_geocode = df_sch_geocode[["CensusTract"]]
 df_sch_geocode.rename(columns = {"CensusTract" : "Census Tract"}, inplace = True)
 
-df_sch_geocode
-
 df_sch_merged = df_sch_import.join(df_sch_geocode)
 df_sch_merged.dropna(inplace = True)
 df_sch_merged.set_index("Census Tract", inplace = True)

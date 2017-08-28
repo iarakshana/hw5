@@ -21,17 +21,19 @@ In this homework, you'll use the same chicago crime file that you downloaded for
    How do the charters do?  Compare the medians (the 50% points) for the PARCC proficiency (%) and college ready (%).
    (You can call median() on a set.)
    Do they serve comparable fractions of low income students to the public schools?
+   * I am asking for a subjective interpretation of the numbers; you can write it as a comment.
 6. Merge the school data with one other Census parameter of your choice, using the function from class.  
    Plot them, save the figure as q6.pdf, and make any observations.  You can save plots with 
    ```
    ax = df.plot()
    ax.get_figure().savefig('q6.pdf')
    ```
+   I've filled in the format for this question; hope it helps.  Treat it as extra credit.
 
 7. Plot and save (`q7.pdf`) the Chicago region unemployment rate from the BLS file provided.
 
 Please fill in solutions as you go.  Each question should go in one of the provided files.
-I would suggest doing your exploration in pandas, first, and then copying the small code over.
+I would suggest doing your exploration in jupyter, first, and then copying the small code over.
 
 ## Python
 
