@@ -1,4 +1,4 @@
-# Homework 4: Pandas and Primes
+# Homework 5: Pandas and Primes
 
 The homework focusses on Pandas, but maintains some level of 'basic python' work.
 
@@ -8,8 +8,22 @@ It is due October 26 at 1:30am.
 
 ## Pandas
 
-In this homework, you'll use the same chicago crime file that you downloaded for the first homework.
-(Download it again if need be.)
+### Downloading some data.
+
+Download some data about crime in Chicago.
+
+* Go to the data portal for the [City of Chicago](https://data.cityofchicago.org/), and navigate to "Crimes - 2001 to present"
+  * You can find it here: https://data.cityofchicago.org/view/5cd6-ry5g
+* We'll look at the last four full years of data, 2013-2016.  Highlight it as shown in the picture below.
+* Now click on "Export." Then under "Rows as CSV," select "Current Filter (843,726 rows)".  (Don't worry if it goes up by a few, before the assignment is over: it seems not to be totally stable.)  Then "Download" (see second picture).  It's about 200 MB, so ... wait!
+* (Yes, there are neat tools for doing your homework, on the website.  But we'll start from the beginning and go further.
+* If this whole data grab is not working, just click this [link](https://data.cityofchicago.org/api/views/6zsd-86xi/rows.csv?accessType=DOWNLOAD&bom=true&query=select+*+where+%60date%60+%3E%3D+%272013-01-01T00%3A00%3A00%27+AND+%60date%60+%3C+%272017-01-01T00%3A00%3A00%27).
+* Move this file to your homework directory, naming it as you like (I call mine `chicago_crime.csv`).
+* DO NOT, along the way, open this file in Microsoft Excel and save it.  It will change how the lines are ended (return/enter) in the file, and make it stop working for you.  Do NOT, later on, commit this file to your GitHub repo -- it's way too big, and we don't need it.
+
+Next week, we'll start playing with accessing these resources programmatically.
+
+
 
 1. Which primary type of crime resulted in the most arrests?  Use `df.groupby(..).count(..)`.
 2. Which primary type most reliably (fractionally) resulted in an arrest? Use `df.groupby(..).mean()`.
@@ -29,7 +43,6 @@ In this homework, you'll use the same chicago crime file that you downloaded for
    ax.get_figure().savefig('q6.pdf')
    ```
    I've filled in the format for this question; hope it helps.  Treat it as extra credit.
-
 7. Plot and save (`q7.pdf`) the Chicago region unemployment rate from the BLS file provided.
 
 Please fill in solutions as you go.  Each question should go in one of the provided files.
@@ -37,17 +50,21 @@ I would suggest doing your exploration in jupyter, first, and then copying the s
 
 ## Python
 
-Please also complete the single (!) python-focussed problem:
+Also complete the python problem below.  It will count for 30% of the assignment.
 
 Circular primes have the property that all rotations of their digits are also prime numbers.  For instance, 19937, 37199, 71993, 93719, 99371, are all circular primes.  Below 100, there are thirteen such primes: 2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, and 97.  How many circular primes are there below one million?
 
 You should start by figuring out 'the' efficient algorithm for calculating a list of primes.
-(Hint from lectures: Eratosthenes.)
+(Hint from lectures: [Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes).)
 
-There are then two methods: either you do floor division, mods and multiplication, 
-  or you could swap parts of strings.
+There are then two methods: you can either move digits around by place value, with mods and integer division by 10,
+  or you can treat your primes as strings move parts around by slicing.
 
 This should be _very_ fast.  (Second hint: when making your list of candidate circular primes, with the sieve, what property of circular primes can you exploit to dramatically reduce the size of that list.)
 
 The assignment is due October 26 at 1:30am.
 
+
+
+![Select Range](select-2013-2016.png)
+![Export Crime](export-filtered.png)
