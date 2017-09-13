@@ -23,7 +23,7 @@ Download some data about crime in Chicago.
 
 Next week, we'll start playing with accessing these resources programmatically.
 
-
+### Exercises
 
 1. Which primary type of crime resulted in the most arrests?  Use `df.groupby(..).count(..)`.
 2. Which primary type most reliably (fractionally) resulted in an arrest? Use `df.groupby(..).mean()`.
