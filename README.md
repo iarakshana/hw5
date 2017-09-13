@@ -15,8 +15,7 @@ Download some data about crime in Chicago.
 * Go to the data portal for the [City of Chicago](https://data.cityofchicago.org/), and navigate to "Crimes - 2001 to present"
   * You can find it here: https://data.cityofchicago.org/view/5cd6-ry5g
 * We'll look at the last four full years of data, 2013-2016.  Highlight it as shown in the picture below.
-* Now click on "Export." Then under "Rows as CSV," select "Current Filter (843,726 rows)".  (Don't worry if it goes up by a few, before the assignment is over: it seems not to be totally stable.)  Then "Download" (see second picture).  It's about 200 MB, so ... wait!
-* (Yes, there are neat tools for doing your homework, on the website.  But we'll start from the beginning and go further.
+* Now click on "Export." Then under "Rows as CSV," select "Current Filter (1,112,989 rows)".  (Don't worry if it goes up by a few, before the assignment is over: incidents occasionally get added.)  Then "Download" (see second picture).  It's about 200 MB, so ... wait!
 * If this whole data grab is not working, just click this [link](https://data.cityofchicago.org/api/views/6zsd-86xi/rows.csv?accessType=DOWNLOAD&bom=true&query=select+*+where+%60date%60+%3E%3D+%272013-01-01T00%3A00%3A00%27+AND+%60date%60+%3C+%272017-01-01T00%3A00%3A00%27).
 * Move this file to your homework directory, naming it as you like (I call mine `chicago_crime.csv`).
 * DO NOT, along the way, open this file in Microsoft Excel and save it.  It will change how the lines are ended (return/enter) in the file, and make it stop working for you.  Do NOT, later on, commit this file to your GitHub repo -- it's way too big, and we don't need it.
@@ -66,5 +65,4 @@ The assignment is due October 26 at 1:30am.
 
 
 
-![Select Range](select-2013-2016.png)
-![Export Crime](export-filtered.png)
+<img src="select-2013-2016.png" width=725px> <img src="export-filtered.png" width=725px>
