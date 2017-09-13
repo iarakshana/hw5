@@ -23,7 +23,7 @@ Download some data about crime in Chicago.
 Next week, we'll start playing with accessing these resources programmatically.
 
 <details><summary>Pictures for Chicago Data Export</summary>
-<img src="select-2013-2016.png" width=725px> <img src="export-filtered.png" width=725px>
+<img src="img/select-2013-2016.png" width=725px> <img src="img/export-filtered.png" width=725px>
 </details>
 
 ### Exercises
