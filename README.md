@@ -22,6 +22,10 @@ Download some data about crime in Chicago.
 
 Next week, we'll start playing with accessing these resources programmatically.
 
+<details><summary>Pictures for Chicago Data Export</summary>
+<img src="select-2013-2016.png" width=725px> <img src="export-filtered.png" width=725px>
+</details>
+
 ### Exercises
 
 1. Which primary type of crime resulted in the most arrests?  Use `df.groupby(..).count(..)`.
@@ -63,6 +67,3 @@ This should be _very_ fast.  (Second hint: when making your list of candidate ci
 
 The assignment is due October 26 at 1:30am.
 
-
-
-<img src="select-2013-2016.png" width=725px> <img src="export-filtered.png" width=725px>
