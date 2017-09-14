@@ -38,7 +38,7 @@ As usual, there are "skeletons" in place for you.  Please fill these in.
    * You will want to check out [pandas.Series.dt.dayofweek](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.dt.dayofweek.html) and  [pandas.Series.dt.hour](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.dt.hour.html).
    * Remember that you must use reasonable labels for your x and x axes.  Since there is a single field plotted, you don't need a legend.  Check out the [matplotlib axes API](https://matplotlib.org/api/axes_api.html#axis-labels-title-and-legend) if you're stuck.
    * The magic incantation for saving is `ax.get_figure().savefig('q3.pdf')`.
-4. Regress number of weapons violations per ward against number of homicides per ward.  What is the slope?  What is its error?  Use [scipy.stats.linregress](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.linregress.html).
+4. Perform a regression with y = homicides per ward and x = weapons violations per ward.  What is the slope?  What is its error?  Use [scipy.stats.linregress](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.linregress.html).
    * N.B., you may find that not all wards have crimes or homicides, when you count by ward.  If so, you may need to use `fillna(0, inplace = True)` to specify that there weren't any.  Make sure you have 50 wards!
 5. Do the same thing using `statsmodels.api.ols`.  They had better agree!
 6. Use the school data from class (in this directory), compare public schools with charters (they have a "C" in their ID).
