@@ -1,7 +1,12 @@
 #!/usr/bin/env python 
 
-# You can simply write your final solution as a comment.
+import pandas as pd
 
+import statsmodels.formula.api as sm
 
-# i.e., what is the performance of the charters?
-#       do they serve comparable fractions of disadvantaged students?
+# solution should hold a tuple of slope and error.
+
+slope, error = 1, 2
+solution = (slope, error)
+print(solution)
+

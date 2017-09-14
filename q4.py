@@ -1,7 +1,12 @@
 #!/usr/bin/env python 
 
-# slope and error should hold the final answer
+import pandas as pd
 
-slope = 0
-error = 0
+from scipy import stats
+
+# solution should hold a tuple of slope and error.
+
+slope, error = 1, 2
+solution = (slope, error)
+print(solution)
 

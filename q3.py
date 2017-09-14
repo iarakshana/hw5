@@ -2,7 +2,5 @@
 
 import pandas as pd
 
-# solution should hold the final answer
-
-print(solution)
+# Print out q3.pdf
 

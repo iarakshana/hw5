@@ -4,7 +4,6 @@ import pandas as pd
 
 # solution should hold the final answer
 
-solution = "HIGHEST ARREST FRACTION"
+solution = "PRIMARY TYPE CRIME"
 print(solution)
-
 
