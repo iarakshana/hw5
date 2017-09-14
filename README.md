@@ -42,22 +42,24 @@ As usual, there are "skeletons" in place for you.  Please fill these in.
    * N.B., you may find that not all wards have crimes or homicides, when you count by ward.  If so, you may need to use `fillna(0, inplace = True)` to specify that there weren't any.  Make sure you have 50 wards!
 5. Do the same thing using `statsmodels.api.ols`.  They had better agree!
 6. Use the school data from class (in this directory), compare public schools with charters (they have a "C" in their ID).
-   Drop the schools that are missing data at the end (`df.dropna(inplace = True)`).
+   Drop the schools that are missing data at the end (do `df.dropna(inplace = True)` on the whole frame).
    How do the charters do?  Compare the median college ready (%).
    (Is this an apples to apples comparison -- do public and charters serve comparable fractions of low income students?
     That is not part of the solution, but you should check!)
 7. Visit the list of [variables](https://api.census.gov/data/2015/acs5/profile/variables.html) from the 2015 American Community Survey 5- year estimates.
-   Use the function below (in your skeleton) to retrieve a json response for a single variable of your choice.
-   Merge that data with the school estimates.
-   Make a scatter plot, either with matplotlib or seaborn.  Save it as `q7.pdf`.  (Label your axes!)
+   Use the function below (in your skeleton) to retrieve a json response for a single variable of your choice.  Be careful not to hammer the API (you could get locked out, though not permanently).
+   It's good practice to cache the result in a csv or something, and only update it when you change something.
+   Merge that data with the school estimates, using the Census Tract as a key.
+   
+   Make a scatter plot with one point for each school, showing the school's PPARC Proficiency against the variable that you have chosen, at the tract level.  You can use either matplotlib or seaborn.  Save it as `q7.pdf`.  (Label your axes!)
    ```python
    import requests
    def get_chicago_census_data(variable):
-   
-       api_base = "http://api.census.gov/data/2014/acs5?for=tract:*&in=state:17+county:31&get=NAME,"
+
+       api_base = "https://api.census.gov/data/2015/acs5/profile?for=tract:*&in=state:17+county:31&get=NAME,"
        return requests.get(api_base + variable).json()
    ```
-8. Plot and save (`q8.pdf`) the Chicago region unemployment rate from the BLS file provided.
+8. Plot and save (`q8.pdf`) the unemployment rates for the five largest cities in the US, from the BLS file provided.
 
 Please fill in solutions as you go.  Each question should go in one of the provided files.
 I would suggest doing your exploration in jupyter, first, and then copying the small code over.
