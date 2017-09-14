@@ -28,25 +28,36 @@ Next week, we'll start playing with accessing these resources programmatically.
 
 ### Exercises
 
-1. Which primary type of crime resulted in the most arrests?  Use `df.groupby(..).count(..)`.
-2. Which primary type most reliably (fractionally) resulted in an arrest? Use `df.groupby(..).mean()`.
-3. Which ward saw the most crime of any type?
+As usual, there are "skeletons" in place for you.  Please fill these in.
+
+0. Which primary type of crime resulted in the most arrests?  Use `df.groupby(..).count(..)`.
+1. Which primary type most reliably (fractionally) resulted in an arrest? Use `df.groupby(..).mean()`.
+2. Which ward saw the most crime of any type?
+3. Plot (histogram) the hourly crime rate for the full city, as a function of day in a week.  Your plot should have one bin for every hour in a week, from midnight Monday morning, till Sunday night.  Save it as `q3.pdf`
+   * Because there are over a million date strings to interpret, this will be somewhat slow to load.
+   * You will want to check out [pandas.Series.dt.dayofweek](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.dt.dayofweek.html) and  [pandas.Series.dt.hour](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.dt.hour.html).
+   * Remember that you must use reasonable labels for your x and x axes.  Since there is a single field plotted, you don't need a legend.  Check out the [matplotlib axes API](https://matplotlib.org/api/axes_api.html#axis-labels-title-and-legend) if you're stuck.
+   * The magic incantation for saving is `ax.get_figure().savefig('q3.pdf')`.
 4. Regress number of weapons violations per ward against number of homicides per ward.  What is the slope?  What is its error?  Use [scipy.stats.linregress](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.linregress.html).
-   * N.B., you may find that not all wards have crimes or homicides, when you count by ward.  If so, you may need to use `fillna(0, inplace = True)` to specify that there weren't.  Make sure you have 50 wards!
-5. Use the school data from class, compare public schools with charters (they have a "C" in their ID).
+   * N.B., you may find that not all wards have crimes or homicides, when you count by ward.  If so, you may need to use `fillna(0, inplace = True)` to specify that there weren't any.  Make sure you have 50 wards!
+5. Do the same thing using `statsmodels.api.ols`.  They had better agree!
+6. Use the school data from class (in this directory), compare public schools with charters (they have a "C" in their ID).
    Drop the schools that are missing data at the end (`df.dropna(inplace = True)`).
-   How do the charters do?  Compare the medians (the 50% points) for the PARCC proficiency (%) and college ready (%).
-   (You can call median() on a set.)
-   Do they serve comparable fractions of low income students to the public schools?
-   * I am asking for a subjective interpretation of the numbers; you can write it as a comment.
-6. Merge the school data with one other Census parameter of your choice, using the function from class.  
-   Plot them, save the figure as q6.pdf, and make any observations.  You can save plots with 
+   How do the charters do?  Compare the median college ready (%).
+   (Is this an apples to apples comparison -- do public and charters serve comparable fractions of low income students?
+    That is not part of the solution, but you should check!)
+7. Visit the list of [variables](https://api.census.gov/data/2015/acs5/profile/variables.html) from the 2015 American Community Survey 5- year estimates.
+   Use the function below (in your skeleton) to retrieve a json response for a single variable of your choice.
+   Merge that data with the school estimates.
+   Make a scatter plot, either with matplotlib or seaborn.  Save it as `q7.pdf`.  (Label your axes!)
+   ```python
+   import requests
+   def get_chicago_census_data(variable):
+   
+       api_base = "http://api.census.gov/data/2014/acs5?for=tract:*&in=state:17+county:31&get=NAME,"
+       return requests.get(api_base + variable).json()
    ```
-   ax = df.plot()
-   ax.get_figure().savefig('q6.pdf')
-   ```
-   I've filled in the format for this question; hope it helps.  Treat it as extra credit.
-7. Plot and save (`q7.pdf`) the Chicago region unemployment rate from the BLS file provided.
+8. Plot and save (`q8.pdf`) the Chicago region unemployment rate from the BLS file provided.
 
 Please fill in solutions as you go.  Each question should go in one of the provided files.
 I would suggest doing your exploration in jupyter, first, and then copying the small code over.
