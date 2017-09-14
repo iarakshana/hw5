@@ -46,7 +46,7 @@ As usual, there are "skeletons" in place for you.  Please fill these in.
    How do the charters do?  Compare the median college ready (%).
    (Is this an apples to apples comparison -- do public and charters serve comparable fractions of low income students?
     That is not part of the solution, but you should check!)
-7. Visit the list of [variables](https://api.census.gov/data/2015/acs5/profile/variables.html) from the 2015 American Community Survey 5- year estimates.
+7. Visit the list of [variables](https://api.census.gov/data/2015/acs5/profile/variables.html) from the 2015 American Community Survey 5-year estimates.
    Use the function below (in your skeleton) to retrieve a json response for a single variable of your choice.  Be careful not to hammer the API (you could get locked out, though not permanently).
    It's good practice to cache the result in a csv or something, and only update it when you change something.
    Merge that data with the school estimates, using the Census Tract as a key.
