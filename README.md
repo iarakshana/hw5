@@ -36,7 +36,7 @@ As usual, there are "skeletons" in place for you.  Please fill these in.
 3. Plot (histogram) the hourly crime rate for the full city, as a function of day in a week.  Your plot should have one bin for every hour in a week, from midnight Monday morning, till Sunday night.  Save it as `q3.pdf`
    * Because there are over a million date strings to interpret, this will be somewhat slow to load.
    * You will want to check out [pandas.Series.dt.dayofweek](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.dt.dayofweek.html) and  [pandas.Series.dt.hour](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.dt.hour.html).
-   * Remember that you must use reasonable labels for your x and x axes.  Since there is a single field plotted, you don't need a legend.  Check out the [matplotlib axes API](https://matplotlib.org/api/axes_api.html#axis-labels-title-and-legend) if you're stuck.
+   * Remember that you must use reasonable labels for your x and y axes.  Since there is a single field plotted, you don't need a legend.  Check out the [matplotlib axes API](https://matplotlib.org/api/axes_api.html#axis-labels-title-and-legend) if you're stuck.
    * The magic incantation for saving is `ax.get_figure().savefig('q3.pdf')`.
 4. Perform a regression with y = homicides per ward and x = weapons violations per ward.  What is the slope?  What is its error?  Use [scipy.stats.linregress](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.linregress.html).
    * N.B., you may find that not all wards have crimes or homicides, when you count by ward.  If so, you may need to use `fillna(0, inplace = True)` to specify that there weren't any.  Make sure you have 50 wards!
