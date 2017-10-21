@@ -4,7 +4,7 @@ The homework focusses on Pandas, but maintains some level of 'basic python' work
 
 You may accept the assignment [here](https://classroom.github.com/assignment-invitations/829adc8487082580d8510e309105e51b).
 
-It is due October 26 at 1:30am.
+It is due Wednesday November 1 at 1:30am.
 
 ## Pandas
 
