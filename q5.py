@@ -1,12 +1,13 @@
 #!/usr/bin/env python 
 
+# You can simply write your final solution as a comment.
+
 import pandas as pd
 
-import statsmodels.formula.api as sm
+# Solution should hold a tuple containing the median value
+# of college ready (%) for public and charters:
 
-# solution should hold a tuple of slope and error.
-
-slope, error = 1, 2
-solution = (slope, error)
+public_CR, charter_CR = 1, 2
+solution = (public_CR, charter_CR)
 print(solution)
 
