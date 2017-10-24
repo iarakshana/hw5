@@ -33,7 +33,7 @@ As usual, there are "skeletons" in place for you.  Please fill these in.
 0. Which primary type of crime resulted in the most arrests?  Use `df.groupby(..).count(..)`.
 1. Which primary type most reliably (fractionally) resulted in an arrest? Use `df.groupby(..).mean()`.
 2. Which ward saw the most crime of any type?
-3. Plot (histogram) the hourly crime rate for the full city, as a function of day in a week.  Your plot should have one bin for every hour in a week, from midnight Monday morning, till Sunday night.  Save it as `q3.pdf`
+3. Plot (histogram) the hourly crime rate for the full city, as a function of day in a week.  Your plot should have 168 bins: one for every hour in a week, from midnight Monday morning, till Sunday night.  Save it as `q3.pdf`
    * Because there are over a million date strings to interpret, this will be somewhat slow to load.
    * You will want to check out [pandas.Series.dt.dayofweek](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.dt.dayofweek.html) and  [pandas.Series.dt.hour](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.dt.hour.html).
    * Remember that you must use reasonable labels for your x and x axes.  Since there is a single field plotted, you don't need a legend.  Check out the [matplotlib axes API](https://matplotlib.org/api/axes_api.html#axis-labels-title-and-legend) if you're stuck.
