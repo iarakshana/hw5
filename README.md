@@ -45,12 +45,13 @@ As usual, there are "skeletons" in place for you.  Please fill these in.
    How do the charters do?  Compare the median college ready (%).
    (Is this an apples to apples comparison -- do public and charters serve comparable fractions of low income students?
     That is not part of the solution, but you should check!)
-6. Visit the list of [variables](https://api.census.gov/data/2015/acs5/profile/variables.html) from the 2015 American Community Survey 5- year estimates.
+6. Plot and save (`q6.pdf`) the unemployment rates for the five largest cities in the US, from the BLS file provided.
+7. Visit the list of [variables](https://api.census.gov/data/2015/acs5/profile/variables.html) from the 2015 American Community Survey 5- year estimates.
    Use the function below (in your skeleton) to retrieve a json response for a single variable of your choice.  Be careful not to hammer the API (you could get locked out, though not permanently).
    It's good practice to cache the result in a csv or something, and only update it when you change something.
    Merge that data with the school estimates, using the Census Tract as a key.
    
-   Make a scatter plot with one point for each school, showing the school's PPARC Proficiency against the variable that you have chosen, at the tract level.  You can use either matplotlib or seaborn.  Save it as `q6.pdf`.  (Label your axes!)
+   Make a scatter plot with one point for each school, showing the school's PPARC Proficiency against the variable that you have chosen, at the tract level.  You can use either matplotlib or seaborn.  Save it as `q7.pdf`.  (Label your axes!)
    ```python
    import requests
    def get_chicago_census_data(variable):
@@ -58,14 +59,13 @@ As usual, there are "skeletons" in place for you.  Please fill these in.
        api_base = "https://api.census.gov/data/2015/acs5/profile?for=tract:*&in=state:17+county:31&get=NAME,"
        return requests.get(api_base + variable).json()
    ```
-7. Plot and save (`q7.pdf`) the unemployment rates for the five largest cities in the US, from the BLS file provided.
 
 Please fill in solutions as you go.  Each question should go in one of the provided files.
 I would suggest doing your exploration in jupyter, first, and then copying the small code over.
 
 ## Python
 
-Also complete the python problem below.  It will count for 30% of the assignment.
+Also complete the python problem below.  It will count for 15% of the assignment.
 
 Circular primes have the property that all rotations of their digits are also prime numbers.  For instance, 19937, 37199, 71993, 93719, 99371, are all circular primes.  Below 100, there are thirteen such primes: 2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, and 97.  How many circular primes are there below one million?
 
