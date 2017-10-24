@@ -17,7 +17,7 @@ Download some data about crime in Chicago.
 * We'll look at the last four full years of data, 2013-2016.  Highlight it as shown in the picture below.
 * Now click on "Export." Then under "Rows as CSV," select "Current Filter (1,112,989 rows)".  (Don't worry if it goes up by a few, before the assignment is over: incidents occasionally get added.)  Then "Download" (see second picture).  It's about 250 MB, so ... wait!
 * If this whole data grab is not working, just click this [link](https://data.cityofchicago.org/api/views/6zsd-86xi/rows.csv?accessType=DOWNLOAD&bom=true&query=select+*+where+%60date%60+%3E%3D+%272013-01-01T00%3A00%3A00%27+AND+%60date%60+%3C+%272017-01-01T00%3A00%3A00%27).
-* Move this file to your homework directory, naming it as you like (I call mine `chicago_crime.csv`).
+* Move this file to your homework directory, naming it `chicago_crime.csv`.  (We want to all be running from the same file.)
 * DO NOT, along the way, open this file in Microsoft Excel and save it.  It will change how the lines are ended (return/enter) in the file, and make it stop working for you.  Do NOT, later on, commit this file to your GitHub repo -- it's way too big, and we don't need it.
 
 Next week, we'll start playing with accessing these resources programmatically.
