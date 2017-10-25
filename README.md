@@ -77,5 +77,5 @@ There are then two methods: you can either move digits around by place value, wi
 
 This should be _very_ fast.  (Second hint: when making your list of candidate circular primes, with the sieve, what property of circular primes can you exploit to dramatically reduce the size of that list.)
 
-The assignment is due October 26 at 1:30am.
+The assignment is due November 1 at 1:30am.
 
