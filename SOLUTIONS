@@ -1,18 +1,19 @@
 
-MOST ARRESTS              :: HABERDASHERY
+MOST ARRESTS              :: THEFT
 
-HIGHEST FRACTION ARRESTS  :: HABERDASHERY
+HIGHEST FRACTION ARRESTS  :: PUBLIC INDECENCY
 
-WARD WITH MOST CRIME      :: PULLMAN
+WARD WITH MOST CRIME      :: 28
 
-WEAPONS BETA              :: 1.00
-WEAPONS SE                :: 0.10
+WEAPONS BETA              :: 0.15414607481107656
+WEAPONS SE                :: 0.005762170019072632
 
-CHARTER COLLEGE READY     :: 1%
-CHARTER PARCC PROFICIENT  :: 2%
-CHARTER LOW INCOME        :: 3%
+CHARTER COLLEGE READY     :: 14.4%
+#CHARTER PARCC PROFICIENT  :: 10.7%
+#CHARTER LOW INCOME        :: 94.2%
 
-Q6 OBSERVATIONS           :: HOW NICE!
+Q6 OBSERVATIONS           :: The trends for all the cities seem to be quite similar, however Houston is  lower
+than the other states in unemployment rate as a whole. Los Angeles has the highest unemployment rate trend-wise. 2009 to 2014 is the period where
+all states had peaks in their unemployment rates.
 
-CIRCULAR PRIMES           :: 21
-
+CIRCULAR PRIMES           :: 55
